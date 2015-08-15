@@ -1,0 +1,27 @@
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+  .header {
+  	background-color:#F44336;
+  	color:#fff;
+  	height:200px;
+  }
+
+  .content {
+  	height:2000px;
+  }
+
+  button {
+  	margin-top: 10px;
+  	margin-left: 20px;
+  	padding: 5px 10px 50px 20px;
+  	background-color: orange;
+  	border-radius: 10px;
+  	box-shadow: none;
+  }
