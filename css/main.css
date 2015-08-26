@@ -1,27 +1,242 @@
-  .affix {
-      top: 0;
-      width: 100%;
-  }
+/*General CSS*/
+html { 
+  font-size: 100%; 
+  height: 100%; 
+  width: 100%; 
+  outline: none; 
+}
 
-  .affix + .container-fluid {
-      padding-top: 70px;
-  }
+body { 
+  background: #FFF; 
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 14px; 
+  font-weight: 400; 
+  color: #373737; 
+  line-height: 26px; 
+  text-align: left; 
+  overflow-x: hidden; 
+  margin: auto; 
+  width: 100%; 
+  height: 100%; 
+  outline: none; 
+}
 
-  .header {
-  	background-color:#F44336;
-  	color:#fff;
-  	height:200px;
-  }
+a, button { 
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  -webkit-transition: all 400ms ease-in-out 0s; 
+  transition: all 400ms ease-in-out 0s; 
+}
 
-  .content {
-  	height:2000px;
-  }
+a:hover { 
+  text-decoration: none; 
+  color: #F96015; 
+}
 
-  button {
-  	margin-top: 10px;
-  	margin-left: 20px;
-  	padding: 5px 10px 50px 20px;
-  	background-color: orange;
-  	border-radius: 10px;
-  	box-shadow: none;
-  }
+embed, object { 
+  max-width: 100%; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.centered {
+    text-align: center;
+}
+
+/*Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix*/
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+/*Fade Navbar CSS Currently Unused*/
+/*
+.container {
+  width: 100%;
+  height: 2000px;
+  position: relative;
+  font-family: 'Trebuchet Ms';
+}
+
+.bg {
+  background: gray; 
+  width: 100%;
+  height: 100px;
+  opacity: 0;
+}
+
+.show {
+  opacity: 0.9; 
+}
+
+.transition {    
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+ul {
+  height: 200px;
+  margin: -70px auto 0 auto;
+  width: 500px;
+}
+
+li {
+  float: left; 
+  list-style: none;
+  margin: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #000;
+}
+*/
+
+
+/* Header */
+header { 
+  background: url('../img/orange.jpg') no-repeat center top; 
+    -webkit-background-size: cover; 
+  background-size: cover; 
+  height: 100%; 
+    -webkit-transition: ease-in-out; 
+    -moz-transition: ease-in-out; 
+    -o-transition: ease-in-out; 
+    transition: ease-in-out; 
+  overflow: hidden; 
+}
+
+header .full-screen { 
+  width: 100%; 
+  height: 100%; 
+  min-height: 1000px; 
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+
+/*Buttons*/
+.highlight-button, .highlight-button:focus { 
+  border: 2px solid #fff;
+  border-radius: 30px; 
+  color: #fff; 
+  font-family: "Oswald", sans-serif; 
+  font-size: 18px; 
+  font-weight: 400; 
+  letter-spacing: 2px; 
+  padding: 10px 20px; 
+  text-decoration: none; 
+  text-transform: uppercase;
+}
+
+.highlight-button:hover { 
+  background-color: #FFF; 
+  color: #000; 
+  border-color: #fff; 
+}
+
+
+/* Intro Text*/
+header .intro-section { 
+  margin: auto; 
+  padding-top: 50%; 
+}
+
+header .intro-section .intro { 
+  color: #ffffff; 
+  margin-bottom: 36px; 
+  letter-spacing: 1px; 
+  line-height: 90px; 
+}
+
+header .intro-section .buttons { 
+  margin: 17px auto; 
+  float: none; 
+  display: inline-block; 
+}
+
+
+/*DIVIDERS*/
+.section-divider {
+    z-index: 999;
+    width: 100%;
+    display: table;
+    max-height: 450px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background-position: center center;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: relative;
+    text-align: center;
+}
+
+.textdivider h1 {
+  padding-top: 70px;
+  color: white;
+  font-size: 40px;
+}
+
+.textdivider p {
+  color: white;
+  font-size: 25px;
+}
+
+.divider {
+  background-image: url('../img/divider.jpg')
+}
+
+
+/*ABOUT*/
+.about {
+  background: #f5f5f5;
+  margin-top: 0px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.about p {
+  margin-left: 30px;
+  margin-right: 30px;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.about .icon {
+  font-size: 60px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+
+/*MEET THE TEAM*/
+.img-circle {
+  height: 120px;
+  width: 120px;
+}
+
+

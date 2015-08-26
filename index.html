@@ -14,50 +14,142 @@
     </head>
     <body>
 
-<div class="container-fluid header">
-  <h1>Bootstrap Affix Example</h1>
-  <h3>Fixed (sticky) navbar on scroll</h3>
-  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
-  <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
-</div>
 
-<nav class="navbar" data-spy="affix" data-offset-top="300">
-  <ul class="nav navbar-nav">
-    <li class="active"><a href="#">Basic Topnav</a></li>
-    <li><a href="#">Page 1</a></li>
-    <li><a href="#">Page 2</a></li>
-    <li><a href="#">Page 3</a></li>
-    <button>LOL</button>
-      </ul>
-</nav>
+<!-- MAIN HEADER -->
+  <header id="home">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container main-navigation">
+              <div class="col-md-3"> 
+                  <a class="navbar-brand" href="#home"><img alt="logo" src="img/logo.png" class="logo"></a>
+              </div>
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+                    <span class="sr-only">Toggle Navigation</span> 
+                      <span class="icon-bar"></span> 
+                      <span class="icon-bar"></span> 
+                      <span class="icon-bar"></span> 
+                  </button>
+              </div>
+              <div class="col-md-9 collapse-navation">
+                  <div class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav navbar-right">
+                          <li><a href="#about">Home</a></li>
+                          <li><a href="#work">Features</a></li>
+                          <li><a href="#expertise">FAQ</a></li>
+                          <li><a href="#team">About</a></li>
+                          <li><a href="#blog">Request a Demo</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                          <button type="button" class="btn btn-default navbar-btn">Login</button>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </nav>
+          
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-md-offset-2 text-center">
+                      <div class="intro-section">
+                          <h1 class="intro"><span>Where Social Meets Work</span><br>
+                              We offer a unique service where you can easily something something something and something</h1>
+                          <a class="highlight-button" href="#about">Schedule a Demo</a> 
+                      </div>
+                  </div>
+              </div>
+          </div>
+  </header>
 
-<div class="container-fluid content">
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-</div>
 
-<p>
-  lolol
-</p>
+<!-- ABOUT -->
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2>Something about this app</h2>
+            <p>Talk about the app or something in here you know what I'm saying?</p>
+            <p><a class="btn btn-success">Learn More</a></p>
+          </div>
+          <div class="col-lg-8 centered">
+            <img class="img-responsive" src="img/iphone.png" alt="Phone">
+          </div>          
+        </div><!-- row -->
+      </div> <!-- container -->
+      <br>
+      <br>
+    </section>
+
+
+<!-- DIVIDER -->
+    <section class="section-divider textdivider divider">
+      <div class="container">
+        <h1>DIVIDER TEXT</h1>
+        <hr>
+        <p>Curabitur at nisi sed urna volutpat accumsan. Aliquam facilisis pellentesque lobortis. Nam dignissim at risus quis faucibus. Morbi finibus suscipit risus, id porta metus interdum vitae. Duis tempor vehicula lectus sed auctor. Suspendisse eget vestibulum odio, non luctus augue. Proin vitae dapibus est, vel posuere diam. Nulla molestie convallis erat, ac accumsan nulla sagittis ac.</p>
+      </div><!-- container -->
+    </section><!-- section -->
+
+
+<!-- MEET THE TEAM -->
+  <div class="container" id="team">
+    <br>
+      <div class="row centered">
+        <h1 class="centered">MEET THE TEAM</h1>
+        <hr>
+        <br>
+        <div class="col-lg-3 centered">
+          <img class="img img-circle" src="img/team.jpg" alt="Jonathan Cortez">
+          <br>
+          <h4><b>Jonathan Cortez</b></h4>
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-flickr"></a>
+          <p>CEO</p>
+          <p>Morbi at suscipit erat, sollicitudin efficitur lacus. Suspendisse blandit justo lectus, a convallis orci pellentesque ut. Curabitur felis magna, molestie vel mi sagittis, dignissim finibus quam.</p>
+        </div><!-- col-lg-3 -->
+        
+        <div class="col-lg-3 centered">
+          <img class="img img-circle" src="img/team.jpg" alt="Morris Chen">
+          <br>
+          <h4><b>Morris Chen</b></h4>
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-flickr"></a>
+          <p>COO</p>
+          <p>Sed nunc diam, auctor in orci non, mattis rhoncus mauris. Suspendisse efficitur lorem tempus nunc sodales, non pulvinar purus volutpat. Fusce eu pulvinar erat, eget placerat nulla.</p>
+        </div><!-- col-lg-3 -->
+        
+        <div class="col-lg-3 centered">
+          <img class="img img-circle" src="img/team.jpg" alt="Nicholas Chan">
+          <br>
+          <h4><b>Nicholas Chan</b></h4>
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-flickr"></a>
+          <p>CTO</p>
+          <p>Sed convallis arcu a massa dignissim, eget aliquam elit ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod nec enim et commodo. Etiam et aliquam eros.</p>
+        </div><!-- col-lg-3 -->
+        
+        <div class="col-lg-3 centered">
+          <img class="img img-circle" src="img/team.jpg" alt="Chiyan Chen">
+          <br>
+          <h4><b>Chiyan Chen</b></h4>
+          <a href="#" class="icon icon-twitter"></a>
+          <a href="#" class="icon icon-facebook"></a>
+          <a href="#" class="icon icon-flickr"></a>
+          <p>EVP</p>
+          <p>Praesent diam lacus, placerat ut pellentesque quis, auctor sed purus. Fusce iaculis elit a ante consequat, eu commodo felis ultricies. Pellentesque vitae metus non dui dignissim aliquet.</p>
+        </div><!-- col-lg-3 -->
+        
+      </div><!-- row -->
+  </div><!-- container -->
+
 
 
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
-
         <script src="js/main.js"></script>
-
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
